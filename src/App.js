@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy, useRef } from "react";
+import Navbar from "./components/Navbar";
+import "./App.css";
+
+const About = lazy(() => import("./components/About"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
+const Resume = lazy(() => import("./components/Resume"));
+const Contact = lazy(() => import("./components/Contact"));
 
 function App() {
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const resumeRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar scrollToSection={scrollToSection} refs={{ aboutRef, projectsRef, skillsRef, resumeRef, contactRef }} />
+      <Suspense fallback={<div className="loading"><h2>Loading...</h2></div>}>
+        <div ref={aboutRef}>
+          <About />
+        </div>
+        <div ref={projectsRef}>
+          <Projects />
+        </div>
+        <div ref={skillsRef}>
+          <Skills />
+        </div>
+        <div ref={resumeRef}>
+          <Resume />
+        </div>
+        <div ref={contactRef}>
+          <Contact />
+        </div>
+      </Suspense>
+    </>
   );
 }
 

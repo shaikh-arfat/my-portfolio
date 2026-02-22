@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+#  Portfolio Website – React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##  Project Overview
 
-## Available Scripts
+This project is a **personal portfolio website** built using **React.js** to showcase my skills, projects, resume, and contact information. The application is designed to be **responsive, performant, and production-ready**, and it has been successfully deployed using **Vercel**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+##  Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **React.js** – Frontend library
+* **JavaScript (ES6+)**
+* **HTML5 & CSS3**
+* **React Hooks** (useState, useEffect, useContext)
+* **React Lazy & Suspense** – Performance optimization
+* **Git & GitHub** – Version control
+* **Vercel** – Deployment & hosting
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+##  Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+portfolio/
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── About.js
+│   │   ├── Projects.js
+│   │   ├── Skills.js
+│   │   ├── Contact.js
+│   │   └── Footer.js
+│   ├── App.js
+│   └── index.js
+│
+├── public/
+├── package.json
+└── README.md
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##  Features Implemented
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*  About Me section
+*  Projects showcase
+*  Skills section
+*  Resume section
+*  Contact form
+*  Responsive design for all devices
+*  Optimized production build
+*  Live deployment with SSL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+##  Performance Optimization
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **Lazy loading** implemented using `React.lazy()` and `Suspense`
+* **Production build** created using:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Minified JavaScript and CSS for faster loading
+* Optimized image usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+##  Local Production Build Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To test the production build locally:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install -g serve
+serve -s build
+```
 
-### Code Splitting
+This ensured all routes and components worked correctly before deployment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+##  Deployment Process (Vercel)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Pushed project code to GitHub repository
+2. Logged into **Vercel**
+3. Imported GitHub repository
+4. Selected **Create React App** framework
+5. Ran automatic build and deployment
+6. Vercel generated a live URL with **SSL enabled**
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔗 Live Website
 
-### Advanced Configuration
+👉 **Deployed Website:**
+https://portfolio-ct9c.vercel.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
