@@ -94,7 +94,7 @@ This ensured all routes and components worked correctly before deployment.
 
 ## 🔗 Live Website
 
-👉 **Deployed Website:**
-https://portfolio-ct9c.vercel.app/
+ **Deployed Website:**
+https://vercel.com/shaikh-arfats-projects/my-portfolio
 
 ---
